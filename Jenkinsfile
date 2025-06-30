@@ -4,7 +4,7 @@ pipeline {
     stages { 
         stage('Git Checkout') { 
             steps { 
-                git 'https://github.com/bonyubking/dev01.git' 
+                git branch: 'main', url: 'https://github.com/bonyubking/dev01.git' 
             } 
         } 
  
